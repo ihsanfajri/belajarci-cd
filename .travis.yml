@@ -20,6 +20,8 @@ android:
 before_script:
   - yes | sdkmanager "platforms;android-29"
 script:
+  - chmod +x ./gradlew
+  - ./gradlew test
   - ./gradlew assemblerelease
 
 deploy:
