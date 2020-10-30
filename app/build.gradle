@@ -18,7 +18,7 @@ android {
 
     signingConfigs {
         config {
-            if (Project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
                 storeFile file(MYAPP_UPLOAD_STORE_FILE)
                 storePassword MYAPP_UPLOAD_STORE_PASSWORD
                 keyalias MYAPP_UPLOAD_KEY_ALIAS
